@@ -6,6 +6,8 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Contribuciones](https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen)
 
+</div>
+
 ## 🌟 Introducción
 PymeOptimus es un lenguaje de programación de alto nivel construido sobre Python diseñado para hacer la programación accesible, intuitiva y poderosa para todos. Combina la simplicidad del lenguaje natural con la potencia de las mejores bibliotecas de Python, permitiendo crear desde scripts simples hasta aplicaciones de escritorio modernas con una curva de aprendizaje mínima.
 
@@ -21,10 +23,6 @@ En un mundo donde la demanda de desarrolladores supera la oferta, PymeOptimus bu
 ✔ Mantener toda la potencia de Python y sus ecosistemas
 
 ✔ Permitir crear aplicaciones visualmente atractivas con mínimo esfuerzo
-
-**El lenguaje que hace la programación accesible para todos**
-
-</div>
 
 ## 📖 Tabla de Contenidos
 - [✨ Características](#-características)
