@@ -444,14 +444,16 @@ crear juego "Aventura Pixel" {
 ### 📁 Estructura del Proyecto
 ```text
 pymeoptimus/
-├── 📂 compiler/         # Núcleo del compilador
-├── 📂 core/             # Librería core del lenguaje  
-├── 📂 stdlib/           # Biblioteca estándar
-├── 📂 frontend/         # Herramientas de interfaz
-├── 📂 ide/              # Entorno de desarrollo
-├── 📂 examples/         # Ejemplos de código
-├── 📂 tests/            # Entorno de pruebas
-└── 📄 README.md         # Documentación de PymeOptimus
+├── 📂 compiler/                # Núcleo del compilador
+├── 📂 core/                    # Librería core del lenguaje
+├── 📂 stdlib/                  # Biblioteca estándar
+├── 📂 frontend/                # Herramientas de interfaz
+├── 📂 ide/                     # Entorno de desarrollo integrado
+├── 📂 packages/                # Sistema de paquetes
+├── 📂 docs/                    # Documentación de proyecto
+├── 📂 examples/                # Ejemplos de código (Casos de Uso)
+├── 📂 tests/                   # Entorno de pruebas
+└── 📄 README.md                # PymeOptimus README.md
 ```
 ### 🔄 Flujo de Compilación
 1. Análisis Léxico: Código fuente → Tokens
