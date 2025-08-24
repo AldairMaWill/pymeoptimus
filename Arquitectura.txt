@@ -1,0 +1,183 @@
+🏗️ Arquitectura y Estructura de Carpetas de PymeOptimus
+---------------------------------------------------------------------------------------
+📁 Estructura General del Proyecto
+---------------------------------------------------------------------------------------
+pymeoptimus/
+├── 📂 compiler/                 # Núcleo del compilador/transpilador
+├── 📂 core/                    # Librería core del lenguaje
+├── 📂 stdlib/                  # Biblioteca estándar
+├── 📂 frontend/                # Herramientas de interfaz
+├── 📂 ide/                     # Entorno de desarrollo integrado
+├── 📂 packages/                # Sistema de paquetes
+├── 📂 docs/                    # Documentación
+├── 📂 examples/                # Ejemplos de código
+└── 📂 tests/                   # Suite de pruebas
+
+---------------------------------------------------------------------------------------
+🏗️ Arquitectura en Detalle
+---------------------------------------------------------------------------------------
+1. 📂 compiler/ - Núcleo del Compilador
+---------------------------------------------------------------------------------------
+compiler/
+├── 📄 parser.py               # Analizador sintáctico
+├── 📄 lexer.py                # Analizador léxico
+├── 📄 ast.py                  # Representación abstracta del árbol sintáctico
+├── 📄 transformer.py          # Transformador de AST
+├── 📄 codegen.py              # Generador de código Python
+├── 📄 optimizer.py            # Optimizaciones
+├── 📄 type_checker.py         # Verificación de tipos
+└── 📄 error_handler.py        # Manejo de errores
+
+---------------------------------------------------------------------------------------
+2. 📂 core/ - Librería Core
+---------------------------------------------------------------------------------------
+core/
+├── 📂 runtime/                # Tiempo de ejecución
+│   ├── 📄 vm.py               # Máquina virtual (opcional)
+│   ├── 📄 memory_manager.py   # Gestión de memoria
+│   └── 📄 garbage_collector.py # Recolector de basura
+├── 📂 types/                  # Sistema de tipos
+│   ├── 📄 type_system.py      # Sistema principal de tipos
+│   ├── 📄 builtin_types.py    # Tipos incorporados
+│   └── 📄 type_inference.py   # Inferencia de tipos
+├── 📂 interoperability/       # Interoperabilidad con Python
+│   ├── 📄 python_bridge.py    # Puente con Python
+│   └── 📄 lib_loader.py       # Cargador de librerías
+└── 📂 utils/                  # Utilidades
+    ├── 📄 logger.py           # Sistema de logging
+    └── 📄 config.py           # Manejo de configuración
+
+---------------------------------------------------------------------------------------
+3. 📂 stdlib/ - Biblioteca Estándar
+---------------------------------------------------------------------------------------
+stdlib/
+├── 📂 ui/                     # Módulos de interfaz de usuario
+│   ├── 📄 ttkbootstrap_wrapper.py # Integración con ttkbootstrap
+│   ├── 📄 components.py       # Componentes UI preconstruidos
+│   ├── 📄 layout.py           # Sistema de layout responsivo
+│   └── 📄 themes.py           # Temas y estilos
+├── 📂 data/                   # Procesamiento de datos
+│   ├── 📄 pandas_wrapper.py   # Integración con Pandas
+│   ├── 📄 dataframes.py       # Dataframes simplificados
+│   └── 📄 analytics.py        # Análisis de datos
+├── 📂 web/                    # Funcionalidades web
+│   ├── 📄 http.py             # Cliente HTTP simplificado
+│   ├── 📄 api_builder.py      # Constructor de APIs
+│   └── 📄 webserver.py        # Servidor web integrado
+├── 📂 database/               # Bases de datos
+│   ├── 📄 orm.py              # ORM simplificado
+│   ├── 📄 connectors.py       # Conectores a bases de datos
+│   └── 📄 query_builder.py    # Constructor de consultas
+├── 📂 game/                   # Desarrollo de juegos
+│   ├── 📄 pygame_wrapper.py   # Integración con PyGame
+│   └── 📄 game_engine.py      # Motor de juego simplificado
+└── 📂 utils/                  # Utilidades generales
+    ├── 📄 datetime.py         # Manejo de fechas y horas
+    ├── 📄 file_io.py          # Operaciones de archivo
+    └── 📄 math.py             # Funciones matemáticas
+
+---------------------------------------------------------------------------------------
+4. 📂 frontend/ - Herramientas de Interfaz
+---------------------------------------------------------------------------------------
+frontend/
+├── 📂 cli/                    # Interfaz de línea de comandos
+│   ├── 📄 main.py             # CLI principal
+│   ├── 📄 commands.py         # Comandos disponibles
+│   └── 📄 repl.py             # REPL interactivo
+├── 📂 language_server/        # Servidor de lenguaje (LSP)
+│   ├── 📄 server.py           # Servidor principal
+│   ├── 📄 completion.py       # Autocompletado
+│   └── 📄 diagnostics.py      # Diagnósticos y errores
+└── 📂 debugger/               # Depurador
+    ├── 📄 debug_adapter.py    # Adaptador de depuración
+    └── 📄 visual_debugger.py  # Depurador visual
+
+---------------------------------------------------------------------------------------
+5. 📂 ide/ - Entorno de Desarrollo
+---------------------------------------------------------------------------------------
+ide/
+├── 📂 pymeoptimus_ide/        # IDE dedicado
+│   ├── 📄 main_window.py      # Ventana principal
+│   ├── 📄 editor.py           # Editor de código
+│   ├── 📄 project_manager.py  # Gestor de proyectos
+│   └── 📄 ui_designer.py      # Diseñador visual de UI
+├── 📂 vscode_extension/       # Extensión para VSCode
+│   ├── 📄 extension.js        # Punto de entrada
+│   ├── 📄 package.json        # Configuración de extensión
+│   └── 📄 syntax_highlighter/ # Resaltado de sintaxis
+└── 📂 plugins/                # Plugins para otros IDEs
+    ├── 📂 pycharm/            # Plugin para PyCharm
+    └── 📂 sublime_text/       # Plugin para Sublime Text
+
+---------------------------------------------------------------------------------------
+6. 📂 packages/ - Sistema de Paquetes
+---------------------------------------------------------------------------------------
+packages/
+├── 📄 package_manager.py      # Gestor de paquetes
+├── 📄 registry.py             # Registro de paquetes
+├── 📄 dependency_resolver.py  # Resolución de dependencias
+└── 📂 cache/                  # Caché de paquetes
+
+---------------------------------------------------------------------------------------
+7. 📂 docs/ - Documentación
+---------------------------------------------------------------------------------------
+docs/
+├── 📂 guides/                 # Guías
+│   ├── 📄 getting_started.md  # Primeros pasos
+│   ├── 📄 ui_development.md   # Desarrollo de UI
+│   └── 📄 data_processing.md  # Procesamiento de datos
+├── 📂 tutorial/               # Tutoriales
+│   ├── 📄 basics/             # Conceptos básicos
+│   ├── 📄 intermediate/       # Nivel intermedio
+│   └── 📄 advanced/           # Nivel avanzado
+├── 📂 api/                    # Documentación de API
+│   ├── 📄 core/               # API del core
+│   ├── 📄 stdlib/             # API de biblioteca estándar
+│   └── 📄 ui/                 # API de UI
+├── 📂 examples/               # Ejemplos de código
+└── 📄 specification.md        # Especificación del lenguaje
+
+---------------------------------------------------------------------------------------
+8. 📂 examples/ - Ejemplos
+---------------------------------------------------------------------------------------
+examples/
+├── 📂 hello_world/            # Ejemplos básicos
+├── 📂 desktop_apps/           # Aplicaciones de escritorio
+├── 📂 web_services/           # Servicios web
+├── 📂 data_analysis/          # Análisis de datos
+├── 📂 games/                  # Juegos
+└── 📂 mobile/                 # Aplicaciones móviles
+
+---------------------------------------------------------------------------------------
+9. 📂 tests/ - Pruebas
+---------------------------------------------------------------------------------------
+tests/
+├── 📂 unit/                   # Pruebas unitarias
+│   ├── 📂 compiler/           # Pruebas del compilador
+│   ├── 📂 core/               # Pruebas del core
+│   └── 📂 stdlib/             # Pruebas de biblioteca estándar
+├── 📂 integration/            # Pruebas de integración
+├── 📂 performance/            # Pruebas de rendimiento
+└── 📂 end_to_end/             # Pruebas end-to-end
+
+---------------------------------------------------------------------------------------
+🧩 Estructura de un Proyecto en PymeOptimus
+---------------------------------------------------------------------------------------
+mi_proyecto/
+├── 📄 pymeconfig.yaml         # Configuración del proyecto
+├── 📂 src/                    # Código fuente
+│   ├── 📄 main.pyme           # Punto de entrada
+│   ├── 📂 modules/            # Módulos personalizados
+│   └── 📂 assets/             # Recursos (imágenes, etc.)
+├── 📂 ui/                     # Definiciones de interfaz
+│   ├── 📄 main_window.ui.pyme # Ventana principal
+│   └── 📄 components/         # Componentes UI reutilizables
+├── 📂 data/                   # Datos y recursos
+├── 📂 tests/                  # Pruebas del proyecto
+├── 📂 dist/                   # Archivos de distribución
+└── 📂 .pyme/                  # Configuración interna
+    ├── 📄 cache/              # Caché de compilación
+    └── 📄 dependencies/       # Dependencias del proyecto
+
+---------------------------------------------------------------------------------------
+AMW - NUEVO LENGUAJE DE PROGRAMACIÓN BASADO EN PYTHON - PYMEOPTIMUS
