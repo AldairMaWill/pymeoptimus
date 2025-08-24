@@ -17,15 +17,12 @@ En un mundo donde la demanda de desarrolladores supera la oferta, PymeOptimus bu
 
 ✔ Permitir crear aplicaciones visualmente atractivas con mínimo esfuerzo
 
-✨ Sintaxis Intuitiva
-""" En lugar de esto en Python: """
+# ✨ Sintaxis Intuitiva
 
-from tkinter import *
-window = Tk()
-btn = Button(window, text="Click me")
-btn.pack()
-
-""" En PymeOptimus es: """
+// from tkinter import *
+// window = Tk()
+// btn = Button(window, text="Click me")
+// btn.pack()
 
 crear ventana "Mi App" {
     agregar botón "Hazme clic" con accion => {
