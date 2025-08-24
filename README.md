@@ -1,3 +1,81 @@
+# 🚀 PymeOptimus - Lenguaje de Programación de Muy Alto Nivel
+
+<div align="center">
+
+![PymeOptimus Logo](https://img.shields.io/badge/PymeOptimus-0.1.0-blueviolet)
+![Python](https://img.shields.io/badge/Python-3.8%2B-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Contribuciones](https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen)
+
+**El lenguaje que hace la programación accesible para todos** ✨
+
+</div>
+
+## 📖 Tabla de Contenidos
+- [✨ Características](#-características)
+- [🚀 Instalación Rápida](#-instalación-rápida)
+- [🎯 ¿Por qué PymeOptimus?](#-por-qué-pymeoptimus)
+- [📚 Primeros Pasos](#-primeros-pasos)
+- [🎨 Ejemplos Prácticos](#-ejemplos-prácticos)
+- [🏗️ Arquitectura](#-arquitectura)
+- [🤝 Contribuir](#-contribuir)
+- [📄 Licencia](#-licencia)
+- [🌍 Comunidad](#-comunidad)
+
+## ✨ Características
+
+### 🎯 Sintaxis Intuitiva y Bilingüe
+```pyme
+// Español
+función saludar(nombre) {
+    imprimir "¡Hola, " + nombre + "!"
+}
+
+// English
+function greet(name) {
+    print "Hello, " + name + "!"
+}
+
+// ¡Incluso mezclado!
+función calculate_total(price, quantity) {
+    retornar price * quantity
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PymeOptimus
 🚀 PymeOptimus: El Lenguaje de Programación para Todos
 
