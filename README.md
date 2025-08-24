@@ -11,7 +11,7 @@
 ## 🌟 Introducción
 PymeOptimus es un lenguaje de programación de alto nivel construido sobre Python diseñado para hacer la programación accesible, intuitiva y poderosa para todos. Combina la simplicidad del lenguaje natural con la potencia de las mejores bibliotecas de Python, permitiendo crear desde scripts simples hasta aplicaciones de escritorio modernas con una curva de aprendizaje mínima.
 
-Filosofía: "Si puedes pensarlo, puedes programarlo".
+
 
 ## 🎯 ¿Por qué PymeOptimus?
 En un mundo donde la demanda de desarrolladores supera la oferta, PymeOptimus busca:
