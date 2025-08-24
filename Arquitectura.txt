@@ -3,15 +3,16 @@
 📁 Estructura General del Proyecto
 ---------------------------------------------------------------------------------------
 pymeoptimus/
-├── 📂 compiler/                 # Núcleo del compilador/transpilador
+├── 📂 compiler/                # Núcleo del compilador
 ├── 📂 core/                    # Librería core del lenguaje
 ├── 📂 stdlib/                  # Biblioteca estándar
 ├── 📂 frontend/                # Herramientas de interfaz
 ├── 📂 ide/                     # Entorno de desarrollo integrado
 ├── 📂 packages/                # Sistema de paquetes
-├── 📂 docs/                    # Documentación
-├── 📂 examples/                # Ejemplos de código
-└── 📂 tests/                   # Suite de pruebas
+├── 📂 docs/                    # Documentación de proyecto
+├── 📂 examples/                # Ejemplos de código (Casos de Uso)
+├── 📂 tests/                   # Entorno de pruebas
+└── 📄 README.md                # PymeOptimus README.md
 
 ---------------------------------------------------------------------------------------
 🏗️ Arquitectura en Detalle
