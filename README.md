@@ -27,7 +27,7 @@ En un mundo donde la demanda de Desarrolladores supera la oferta, PymeOptimus bu
 - [🚀 Instalación Rápida](#-instalación-rápida)
 - [🎯 ¿Por qué PymeOptimus?](#-por-qué-pymeoptimus)
 - [📚 Primeros Pasos](#-primeros-pasos)
-- [🎨 Ejemplos Prácticos](#-ejemplos-prácticos)
+- [💫 Ejemplos Prácticos](#-ejemplos-prácticos)
 - [🏗️ Arquitectura](#-arquitectura)
 - [🤝 Contribuir](#-contribuir)
 - [📄 Licencia](#-licencia)
@@ -103,328 +103,260 @@ resumen = analizar datos {
 mostrar_tabla resumen
 crear_grafico resumen tipo: "barras" título: "Ventas por Categoría"
 ```
-### 🚀 Instalación Rápida
+## 🚀 Instalación Rápida
+Requisitos Previos
 
+- Python 3.8 o superior
+- pip (gestor de paquetes de Python)
 
+Instalación desde PyPI
+```bash
+# Instalación básica
+pip install pymeoptimus
 
+# Instalación con soporte completo de UI
+pip install pymeoptimus[ui]
 
+# Instalación completa con todas las características
+pip install pymeoptimus[full]
+```
+Instalación desde Código Fuente
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/pymeoptimus.git
+cd pymeoptimus
 
+# Instalar en modo desarrollo
+pip install -e .
 
+# O instalar con extras
+pip install -e .[ui,full]
+```
+Verificar la Instalación
+```bash
+# Ejecutar el REPL interactivo
+pyme
 
+# O probar con un archivo de ejemplo
+pyme ejemplos/hola_mundo.pyme
+```
+## 🎯 ¿Por qué PymeOptimus?
+### 🔍 Para Educadores y Estudiantes
+```pyme
+// Conceptos complejos se vuelven simples
+// Python tradicional (15+ líneas)
+class Estudiante:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    def es_mayor(self):
+        return self.edad >= 18
 
+est = Estudiante("Maria", 20)
+print(est.es_mayor())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# PymeOptimus
-🚀 PymeOptimus: El Lenguaje de Programación para Todos
-
-🌟 Introducción
-PymeOptimus es un lenguaje de programación de alto nivel construido sobre Python diseñado para hacer la programación accesible, intuitiva y poderosa para todos. Combina la simplicidad del lenguaje natural con la potencia de las mejores bibliotecas de Python, permitiendo crear desde scripts simples hasta aplicaciones de escritorio modernas con una curva de aprendizaje mínima.
-
-Filosofía: "Si puedes pensarlo, puedes programarlo".
-
-🎯 ¿Por qué PymeOptimus?
-En un mundo donde la demanda de desarrolladores supera la oferta, PymeOptimus busca:
-
-✔ Reducir la barrera de entrada a la programación
-
-✔ Hacer el desarrollo más intuitivo y menos intimidante
-
-✔ Mantener toda la potencia de Python y sus ecosistemas
-
-✔ Permitir crear aplicaciones visualmente atractivas con mínimo esfuerzo
-
-# ✨ Sintaxis Intuitiva
-
-// from tkinter import *
-// window = Tk()
-// btn = Button(window, text="Click me")
-// btn.pack()
-
-crear ventana "Mi App" {
-    agregar botón "Hazme clic" con accion => {
-        mostrar "¡Hiciste clic!"
+// PymeOptimus (4 líneas)
+clase Estudiante {
+    constructor(nombre, edad) {
+        self.nombre = nombre
+        self.edad = edad
     }
+    es_mayor => self.edad >= 18
 }
 
-
-✔ Integración con Bibliotecas Modernas
-   Soporte nativo para:
-
-⁜ ttkbootstrap → Interfaces modernas y profesionales
-
-⁜ Pandas → Procesamiento de datos simplificado
-
-⁜ Requests → HTTP como conversación
-
-⁜ PyGame → Juegos con sintaxis intuitiva
-
-#---------------------------------------------
-|---------------------------------------------
-➰ Responsividad Automática
-|---------------------------------------------
-| # pyme
-|---------------------------------------------
-crear ventana "App Responsiva" {
-    diseño = rejilla(columnas: 3, filas: "flexible")
+maria = Estudiante("Maria", 20)
+imprimir maria.es_mayor()
+```
+### 💼 Para Desarrolladores de PYMEs
+```pyme
+// Automatización de procesos empresariales
+función procesar_pedidos() {
+    pedidos = obtener_pedidos_pendientes()
     
-    agregar campo_texto "Nombre" en [fila: 1, columna: 1]
-    agregar campo_texto "Email" en [fila: 1, columna: 2]
-    agregar botón "Enviar" en [fila: 1, columna: 3]
-    
-    // Redimensionamiento automático
-    cuando tamaño_cambie => {
-        si ancho < 600 {
-            reconfigurar rejilla(columnas: 1, filas: "flexible")
-        }
-    }
-}
-
-#---------------------------------------------
-|---------------------------------------------
-🛠 Instalación
-|---------------------------------------------
-| # bash
-|---------------------------------------------
-# Instalación desde PyPI
-  $ pip install pymeoptimus
-
-# Instalación con extras para UI
-  $ pip install pymeoptimus[ui]
-
-# Instalación completa
-  $ pip install pymeoptimus[full]
-#---------------------------------------------
-|---------------------------------------------
-📚 Tutorial Rápido
-|---------------------------------------------
-
-""" Hola Mundo Moderno """
-|---------------------------------------------
-| # pyme
-|---------------------------------------------
-// Aplicación de escritorio con un solo comando
-crear app "Hola Mundo" {
-    ventana principal {
-        título: "Mi Primera App"
-        tamaño: 800x600
-        estilo: "moderno"
-        
-        contenido {
-            columna {
-                espaciado: 20
-                padding: 30
-                
-                etiqueta "¡Bienvenido a PymeOptimus!" con {
-                    estilo: "h1"
-                    color: "primario"
-                }
-                
-                botón "Saludar" con {
-                    accion: => {
-                        mostrar_mensaje "Hola desde PymeOptimus!"
-                    }
-                    estilo: "éxito"
-                    tamaño: "grande"
-                }
-            }
-        }
-    }
-}
-
-|-----------------------------------------------------------------
-💫 Consumiendo una API
-|-----------------------------------------------------------------
-| # pyme
-|-----------------------------------------------------------------
-// Obteniendo datos de internet de forma simple
-datos = obtener_json "https://api.ejemplo.com/usuarios"
-
-para cada usuario en datos {
-    crear tarjeta {
-        título: usuario.nombre
-        subtítulo: usuario.email
-        imagen: usuario.avatar
-        acciones: [
-            botón "Ver perfil" con accion => abrir_url usuario.perfil_url,
-            botón "Contactar" con accion => enviar_email usuario.email
-        ]
-    }
-}
-|-----------------------------------------------------------------
-🕹 Procesamiento de Datos
-|-----------------------------------------------------------------
-| # pyme
-|-----------------------------------------------------------------
-// Análisis de datos simplificado
-importar analitica
-
-datos = leer_archivo "ventas.csv"
-
-resumen = analizar datos {
-    grupo_por: "categoría"
-    calcular: {
-        "total_ventas": suma "monto",
-        "promedio": promedio "monto",
-        "transacciones": contar "id"
-    }
-    ordenar_por: "total_ventas" descendente
-}
-
-mostrar_tabla resumen
-crear_grafico resumen tipo: "barras"
-|-----------------------------------------------------------------
-🎨 Diseño de Interfaces con ttkbootstrap
-|-----------------------------------------------------------------
-    Creando una App Profesional
-|-----------------------------------------------------------------
-| # pyme
-|-----------------------------------------------------------------
-crear app "Gestión de Clientes" tema: "superhero" {
-    
-    // Barra de navegación
-    barra_navegacion {
-        logo: "empresa.png"
-        elementos: [
-            enlace "Inicio" => mostrar_seccion "inicio",
-            enlace "Clientes" => mostrar_seccion "clientes",
-            enlace "Reportes" => mostrar_seccion "reportes",
-            botón "Nuevo Cliente" con {
-                estilo: "primary-outline"
-                accion: => abrir_modal "nuevo_cliente"
-            }
-        ]
-    }
-    
-    // Sección principal
-    seccion "inicio" {
-        fila {
-            tarjeta "Resumen General" {
-                metricas {
-                    "Total Clientes": 142,
-                    "Ventas Hoy": "$3,452",
-                    "Crecimiento": "+12%"
-                }
-            }
-            
-            tarjeta "Actividad Reciente" {
-                lista_actividades {
-                    "Juan Pérez realizó una compra de $150",
-                    "María García actualizó su perfil",
-                    "Nuevo cliente registrado: Carlos López"
-                }
-            }
+    para cada pedido en pedidos {
+        si pedido.es_urgente() {
+            enviar_notificacion(pedido.cliente, "Tu pedido está en proceso")
+            actualizar_estado(pedido, "procesando")
         }
     }
     
-    // Modal para nuevo cliente
-    modal "nuevo_cliente" título: "Agregar Cliente" {
-        formulario {
-            campo texto "Nombre" requerido: verdadero
-            campo email "Correo Electrónico" 
-            campo telefono "Teléfono"
-            selector "Tipo" opciones: ["Regular", "VIP", "Premium"]
-            
-            botones {
-                botón "Cancelar" con { estilo: "secondary"; accion: cerrar_modal }
-                botón "Guardar" con { estilo: "primary"; accion: guardar_cliente }
-            }
-        }
-    }
+    generar_reporte pedidos
 }
 
-|-----------------------------------------------------------------
-🔄 Conversión desde Python
-|-----------------------------------------------------------------
-    PymeOptimus incluye un traductor automático:
-|-----------------------------------------------------------------
-| # python
-|-----------------------------------------------------------------
-# Python tradicional:
-from ttkbootstrap import Window, Button, Style
-import ttkbootstrap as ttk
-
-def main():
-    style = Style(theme='superhero')
-    window = Window(title="Mi App", themename="superhero")
-    btn = Button(window, text="Hazme clic", command=lambda: print("Hola"))
-    btn.pack(padx=10, pady=10)
-    window.mainloop()
-
-if __name__ == "__main__":
-    main()
-|-----------------------------------------------------------------
-| # pyme
-|-----------------------------------------------------------------
-// Equivalente en PymeOptimus
-crear app "Mi App" tema: "superhero" {
-    ventana principal {
-        botón "Hazme clic" con accion => mostrar "Hola"
-    }
-}
-
-|-----------------------------------------------------------------
-📦 Módulos Especializados
-🎮 PyGame Simplificado
-|-----------------------------------------------------------------
-| # pyme
-|-----------------------------------------------------------------
+// Ejecutar diariamente a las 9:00 AM
+programar_tarea "procesar_pedidos" cada "día" a "9:00"
+```
+### 🎮 Para Creadores de Contenido
+```pyme
+// Crear un juego simple con PyGame
 importar juego
 
 crear juego "Aventura Espacial" {
-    tamaño: 800x600
-    fps: 60
-    
     jugador = crear_nave {
         posición: 400x500
         velocidad: 5
         disparo: tecla "espacio"
     }
     
-    enemigos = crear_oleada {
-        cantidad: 10
-        patrón: "formación V"
-    }
+    enemigos = crear_oleada cantidad: 10
     
     actualizar cada_frame => {
         si tecla_presionada "derecha" { jugador.mover_derecha }
         si tecla_presionada "izquierda" { jugador.mover_izquierda }
+    }
+}
+```
+## 📚 Primeros Pasos
+### 🎯 Tu Primera Aplicación
+Crea un archivo hola_mundo.pyme:
+```pyme
+// Aplicación de escritorio completa
+crear app "Mi Primera App" {
+    ventana principal {
+        título: "¡Hola PymeOptimus!"
+        tamaño: 600x400
         
-        si jugador.disparando {
-            crear_proyectil desde jugador.posición
+        contenido {
+            columna {
+                espaciado: 15
+                padding: 25
+                
+                etiqueta "¡Bienvenido a la Programación!" con {
+                    estilo: "h1"
+                    color: "éxito"
+                }
+                
+                campo_texto "Nombre" -> nombre_usuario
+                
+                botón "Saludar" con {
+                    accion: => {
+                        mensaje = "¡Hola " + nombre_usuario + "!"
+                        mostrar_mensaje mensaje
+                    }
+                    estilo: "primario"
+                }
+                
+                botón "Salir" con {
+                    accion: => cerrar_aplicacion
+                    estilo: "peligro"
+                }
+            }
         }
     }
 }
-|-----------------------------------------------------------------
-🌐 Web y APIs
-|-----------------------------------------------------------------
-| # pyme
-|-----------------------------------------------------------------
-// Servidor web simple
+```
+Ejecútalo con:
+```pyme
+pyme hola_mundo.pyme
+```
+### 📖 Conceptos Básicos
+Variables y Tipos
+```pyme
+// Declaración simple con inferencia
+nombre = "Ana"           // Texto (String)
+edad = 25                // Número entero (Int)
+altura = 1.75            // Número decimal (Float)
+activo = verdadero       // Booleano (True/False)
+
+// Tipado explícito opcional
+precio: decimal = 19.99
+cantidad: entero = 42
+mensaje: texto = "Hola"
+```
+Estructuras de Control
+```pyme
+// Condicionales
+si edad >= 18 {
+    imprimir "Eres adulto"
+} sino si edad >= 13 {
+    imprimir "Eres adolescente"
+} sino {
+    imprimir "Eres niño"
+}
+
+// Bucles
+para i en rango(1, 6) {
+    imprimir "Número: " + i
+}
+
+mientras activo {
+    // Hacer algo...
+    si condicion_parada {
+        activo = falso
+    }
+}
+```
+Funciones
+```pyme
+// Función simple
+función duplicar(numero) {
+    retornar numero * 2
+}
+
+// Función con parámetros opcionales
+función saludar(nombre, mensaje = "Hola") {
+    retornar mensaje + ", " + nombre + "!"
+}
+
+// Función flecha (arrow function)
+calcular_iva = (monto) => monto * 0.21
+```
+## 💫 Ejemplos Prácticos
+### 📊 Aplicación de Gestión de Datos
+```pyme
+// Analizar y visualizar datos de ventas
+importar analitica
+importar visualizacion
+
+datos = leer_excel "ventas_2024.xlsx"
+
+// Limpiar y procesar datos
+datos_limpios = datos.filtrar(fila => fila.monto > 0)
+                     .transformar("fecha", => formatear_fecha(fila.fecha))
+
+// Análisis avanzado
+analisis = analizar datos_limpios {
+    grupo_por: ["mes", "categoría"]
+    calcular: {
+        "ventas_totales": suma "monto",
+        "ventas_promedio": promedio "monto",
+        "num_transacciones": contar "id"
+    }
+    filtro: "región" == "Norte"
+}
+
+// Visualización interactiva
+crear_dashboard {
+    titulo: "Análisis de Ventas 2024"
+    
+    grafico_barras {
+        datos: analisis
+        x: "mes"
+        y: "ventas_totales"
+        grupo: "categoría"
+    }
+    
+    grafico_torta {
+        datos: analisis.agrupar_por("categoría")
+        valores: "ventas_totales"
+        etiquetas: "categoría"
+    }
+    
+    tabla_datos {
+        datos: analisis
+        columnas: ["mes", "categoría", "ventas_totales", "ventas_promedio"]
+        ordenar_por: "ventas_totales" descendente
+    }
+}
+```
+### 🌐 Aplicación Web Simple
+```pyme
+// Crear un servidor web con API REST
 crear servidor puerto: 8000 {
     ruta "/" => {
         retornar vista "inicio" con {
-            título: "Mi Sitio Web",
-            contenido: "Bienvenido a PymeOptimus Web"
+            titulo: "Mi App Web",
+            usuarios: obtener_usuarios()
         }
     }
     
@@ -432,77 +364,130 @@ crear servidor puerto: 8000 {
         usuarios = obtener_desde_bd "SELECT * FROM usuarios"
         retornar json usuarios
     }
+    
+    ruta "/api/usuarios" metodo: "POST" => {
+        datos = obtener_json_datos()
+        resultado = insertar_en_bd "usuarios" datos
+        retornar json { "éxito": verdadero, "id": resultado.id_insertado }
+    }
 }
 
-// Cliente HTTP simple
+// Cliente HTTP para consumir APIs
 respuesta = enviar peticion {
-    url: "https://api.ejemplo.com/datos"
-    método: "POST"
-    cuerpo: {
-        "usuario": "nombre_usuario",
-        "accion": "obtener_datos"
-    }
+    url: "https://api.mi-servicio.com/datos"
+    metodo: "GET"
     headers: {
-        "Authorization": "Bearer token_ejemplo"
+        "Authorization": "Bearer mi_token"
     }
 }
-|-----------------------------------------------------------------
-🚀 Guía de Contribución
-¡Queremos que PymeOptimus crezca con la comunidad!
 
-|-----------------------------------------------------------------
-Áreas de Desarrollo
-🎨 Nuevos temas y estilos para UI
+si respuesta.exitoso {
+    datos = respuesta.json()
+    procesar_datos datos
+} sino {
+    imprimir "Error: " + respuesta.estado
+}
+```
+### 🎮 Juego Simple con PyGame
+```pyme
+// Juego de plataformas básico
+importar juego
 
-🔌 Integración con más bibliotecas de Python
+crear juego "Aventura Pixel" {
+    tamaño: 800x600
+    fps: 60
+    
+    jugador = crear_personaje {
+        posicion: 100x400
+        velocidad: 5
+        gravedad: 0.5
+        salto: 12
+        sprite: "heroe.png"
+    }
+    
+    plataformas = [
+        crear_plataforma posicion: 0x550 tamaño: 800x50,
+        crear_plataforma posicion: 200x450 tamaño: 200x25,
+        crear_plataforma posicion: 500x350 tamaño: 150x25
+    ]
+    
+    enemigos = crear_oleada {
+        cantidad: 5
+        tipo: "fantasma"
+        patrón: "movimiento_sinusoidal"
+    }
+    
+    actualizar cada_frame => {
+        // Movimiento del jugador
+        si tecla_presionada "derecha" { jugador.mover_derecha }
+        si tecla_presionada "izquierda" { jugador.mover_izquierda }
+        si tecla_presionada "espacio" y jugador.en_suelo { jugador.saltar }
+        
+        // Verificar colisiones
+        para cada plataforma en plataformas {
+            si jugador.colisiona_con(plataforma) {
+                jugador.detener_caida()
+            }
+        }
+        
+        // Actualizar enemigos
+        para cada enemigo en enemigos {
+            enemigo.mover_segun_patron()
+            si jugador.colisiona_con(enemigo) {
+                jugador.perder_vida()
+            }
+        }
+    }
+}
+```
+## 🏗️ Arquitectura
+### 📁 Estructura del Proyecto
+```text
+pymeoptimus/
+├── 📂 compiler/         # Núcleo del compilador
+├── 📂 core/             # Librería core del lenguaje  
+├── 📂 stdlib/           # Biblioteca estándar
+├── 📂 frontend/         # Herramientas de interfaz
+├── 📂 ide/              # Entorno de desarrollo
+├── 📂 examples/         # Ejemplos de código
+├── 📂 docs/             # Documentación
+└── 📂 tests/            # Entorno de pruebas
+```
+### 🔄 Flujo de Compilación
+1. Análisis Léxico: Código fuente → Tokens
 
-📚 Mejora de documentación y tutoriales
+2. Análisis Sintáctico: Tokens → AST (Abstract Syntax Tree)
 
-🧪 Ampliación de suite de tests
+3. Transformación: AST PymeOptimus → AST Python
 
-🌐 Traducciones a otros idiomas
-|-----------------------------------------------------------------
-📊 Benchmarks
-PymeOptimus mantiene el rendimiento de Python mientras añade capas de productividad:
+4. Generación de Código: AST Python → Código Python ejecutable
 
-Operación	Python Puro	PymeOptimus	Overhead
-UI Creation	100ms	105ms	5%
-Data Processing	500ms	510ms	2%
-API Calls	200ms	202ms	1%
-|-----------------------------------------------------------------
-📝 Roadmap
-Versión 1.1 (Próximo)
-Soporte para dispositivos móviles
+5. Ejecución: Ejecución del código Python resultante
 
-Integración con bases de datos visual
+## 🤝 Contribuir
+¡Nos encantan las contribuciones! Aquí cómo puedes ayudar:
 
-Editor web-based para PymeOptimus
+### 🐛 Reportar Errores
+1. Ve a Issues
 
-Versión 1.2
-Generación de código nativo (iOS/Android)
+2. Busca si el error ya fue reportado
 
-Soporte para machine learning visual
+3. Si no, crea un nuevo issue con:
+   - Descripción clara del problema
+   - Pasos para reproducirlo
+   - Versión de PymeOptimus y Python
+   - Capturas de pantalla si es aplicable
 
-Marketplace de componentes
+### 💡 Sugerir Nuevas Características
+1. Abre un nuevo issue
 
-Versión 2.0
-Compilación a WebAssembly
+2. Usa la plantilla "Feature Request"
 
-Soporte para realidad aumentada
+3. Describe la característica en detalle
 
-Herramientas de colaboración en tiempo real
-|-----------------------------------------------------------------
-🌍 Comunidad
-📖 Documentación: pymeoptimus.dev
+4. Explica por qué sería útil
 
-💬 Discord: Unirse a la comunidad
+## 📄 Licencia
+Este proyecto está bajo la Licencia MIT - ve el archivo LICENSE para detalles.
 
-🐛 Issues: GitHub Issues
-
-💡 Ideas: GitHub Discussions
-|-----------------------------------------------------------------
-📄 Licencia
-PymeOptimus es de código abierto bajo la licencia MIT. ¡Puedes usarlo libremente para proyectos personales y comerciales!
-|-----------------------------------------------------------------
-🤝 Patrocinadores
-Este proyecto es mantenido por la comunidad y patrocinadores. Considera convertirte en patrocinador para ayudar a mantener el proyecto.
+## AMW
