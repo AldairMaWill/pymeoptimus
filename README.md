@@ -16,12 +16,11 @@ En un mundo donde la demanda de desarrolladores supera la oferta, PymeOptimus bu
 ✔ Mantener toda la potencia de Python y sus ecosistemas
 
 ✔ Permitir crear aplicaciones visualmente atractivas con mínimo esfuerzo
-|-------------------------------------------------------------------------
-|---------------------------------------------
+
 ✨ Sintaxis Intuitiva
-|---------------------------------------------
-| # python
-|---------------------------------------------
+
+# python
+
 """ En lugar de esto en Python: """
 
 // from tkinter import *
