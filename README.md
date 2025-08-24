@@ -450,8 +450,8 @@ pymeoptimus/
 ├── 📂 frontend/         # Herramientas de interfaz
 ├── 📂 ide/              # Entorno de desarrollo
 ├── 📂 examples/         # Ejemplos de código
-├── 📂 docs/             # Documentación
-└── 📂 tests/            # Entorno de pruebas
+├── 📂 tests/            # Entorno de pruebas
+└── 📄 README.md         # Documentación de PymeOptimus
 ```
 ### 🔄 Flujo de Compilación
 1. Análisis Léxico: Código fuente → Tokens
